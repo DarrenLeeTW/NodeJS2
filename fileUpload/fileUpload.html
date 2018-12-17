@@ -1,19 +1,11 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>file upload</title>
-</head>
-<body>
-    <h3>
-        choose a file to upload
-    </h3>
-
-    <form action="/file_upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" size="50" />
-        <br />
-        <input type="submit" value="上傳文件" />
-    </form>
-</body>
-</html>
+﻿<form class="formUpload"
+      enctype="multipart/form-data"
+      method="POST">
+    <div class="formContainer">
+        <h2>Upload a vacation photo for contest!</h2>
+        <label>
+            File: <input type="file" id="fieldPhoto" name="photo" accept="image/*" data-url="/upload" multiple>
+        </label>
+        <div id="uploads"></div>
+    </div>
+</form>
